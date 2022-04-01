@@ -13,13 +13,13 @@
 
         -   `Function as a Child` 또는 `Render Props`라고 부름
 
-```javascript
-//예시
-const RenderPropsSample = ({ children }) => {
-    return <div>결과 : {children(5)}</div>;
-};
+        ```javascript
+        //예시
+        const RenderPropsSample = ({ children }) => {
+            return <div>결과 : {children(5)}</div>;
+        };
 
----
-<RenderPropsSample>{value => 2 * value}</RenderPropsSample>
+        ---
+        <RenderPropsSample>{value => 2 * value}</RenderPropsSample>
 
-```
+        ```
