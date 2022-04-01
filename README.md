@@ -1,5 +1,7 @@
 # REACT Context API 사용해보기
 
+> 기존에는 컴포넌트 간에 상태를 교류해야할 경우 무조건 부모 -> 자식 흐름으로 props를 전달하여 사용하였지만, Context API를 통해 더욱 쉽게 상태를 교류할 수 있게 되었다.
+
 ### 새 Context 만들기
 
 - 프로젝트 생성 후 `src/contexts` 디렉토리 생성, 그 후에 파일 생성
@@ -51,3 +53,8 @@
 - 색상 선택 컴포넌트에 만들어둔 Consumer 함수 불러와서 설정
 
 ### Consumer 대신 Hook 또는 Static ContextType 사용하기
+
+#### useContext
+
+- `useContext`라는 Hook을 사용하면 함수형 컴포넌트에서 편하게 사용 가능
+- 클래스형 컴포넌트에서는 사용할 수 없음
