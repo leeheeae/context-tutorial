@@ -23,3 +23,12 @@
         <RenderPropsSample>{value => 2 * value}</RenderPropsSample>
 
         ```
+
+### Provider 를 이용한 Context value 변경하기
+
+```javascript
+<ColorContext.Provider value={{ color: 'red' }}></ColorContext>
+```
+
+-   CreateContext 함수에 파라미터로 Context의 기본값 설정은 Provider를 사용하지 않았을 때만 사용됨
+-   Provider를 사용할 때는 꼭 value를 명시해주어야함
