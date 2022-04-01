@@ -3,7 +3,7 @@ import ColorContext from "./contexts/color";
 
 const App = () => {
     return (
-        <ColorContext.Provider>
+        <ColorContext.Provider value={{ color: "black" }}>
             <div>
                 <ColorBox />
             </div>
